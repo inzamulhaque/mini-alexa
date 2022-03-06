@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ihlexa || MD IH Alif</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .conatiner {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .conatiner i {
+            font-size: 2rem;
+            border: 1px solid green;
+            color: blueviolet;
+            border-radius: 50%;
+            padding: 10px;
+            transition: all 1s;
+        }
+
+        .conatiner i:hover {
+            background: orange;
+            border-color: orange;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <h1>My <span style="color: royalblue;">Ihlexa</span> || MD <span style="color: royalblue;">IH</span> Alif</h1>
+        <h5>please click microphone</h5>
+        <i onclick="recognition.start()" class="fa-solid fa-microphone"></i>
+        <h3 id="myText"></h3>
+        <h3 id="res"></h3>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
