@@ -31,7 +31,7 @@ function readText(text) {
     } else if (text === "what's your father name" || text === "what is your father name") {
         speech.text = "MD IH Alif";
     } else if (text === "what's your mother name" || text === "what is your mother name") {
-        speech.text = "I don't know";
+        speech.text = "JavaScript";
     } else if (text === "what time it is now") {
         speech.text = new Date().toLocaleTimeString();
     } else {
